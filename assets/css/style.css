@@ -1723,110 +1723,20 @@ canvas {
   margin-bottom: 30px;
 }
 
-.st-portfolio::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #3f4551;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  z-index: 1;
+video, .iframe {
+  border-radius: 20px;
 }
 
-.st-portfolio::after {
-  content: "";
-  position: absolute;
-  border: 1px solid #fdfeff;
-  width: 90%;
-  height: 90%;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 1;
+.w-250 {
+  margin-bottom: 1rem;
 }
 
-.st-portfolio:hover::before {
-  opacity: .85;
+@media  screen and (min-width: 300px) and (max-width: 767px) {
+  video, .iframe {
+    width: 100%;
+  }
 }
 
-.st-portfolio:hover::after {
-  opacity: .85;
-}
-
-.st-portfolio:hover .st-portfolio-item-hover {
-  opacity: 1;
-  visibility: visible;
-}
-
-.st-portfolio .st-portfolio-img img {
-  width: 100%;
-}
-
-.st-portfolio-item-hover {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  z-index: 5;
-  text-align: center;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.st-portfolio-item-hover i {
-  border: 0.5px solid #3f4551;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #fec544;
-  color: #151b29;
-  font-size: 26px;
-  opacity: .8;
-}
-
-.st-portfolio-item-hover h5 {
-  position: absolute;
-  width: 250px;
-  top: 87px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  margin: 0;
-  font-size: 20px;
-  color: #fdfeff;
-}
-
-.st-portfolio-item-hover p {
-  position: absolute;
-  width: 250px;
-  top: 114px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  margin: 0;
-}
-
-.st-portfolio-btn {
-  margin-top: 20px;
-}
 
 /*--------------------------------------------------------------
 7. Slider
